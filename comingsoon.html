@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Coming Soon | Montmed</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+  <style>
+    :root {
+      --primary-blue: #0056b3; /* Montmed's primary blue */
+      --Deep-Pink: #D13C96; /* Pink color */
+      --accent-maroon: #822E93; /* Divider line color */
+      --background-color: #ffffff; /* White */
+      --text-color: #333333; /* Dark gray for text */
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    body {
+      background-color: var(--background-color);
+      color: var(--text-color);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 20px 40px;
+      background-color: var(--background-color);
+      display: flex;
+      align-items: center;
+      border-bottom: 4px solid var(--accent-maroon); /* Divider line */
+    }
+
+    .logo img {
+      height: 90px; /* Increased logo size */
+      object-fit: contain;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 80px 20px;
+      background-color: var(--background-color);
+    }
+
+    .coming-soon-container {
+      max-width: 700px;
+      width: 100%;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: var(--accent-maroon);
+    }
+
+    p {
+      font-size: 20px;
+      color: var(--text-color);
+      margin-bottom: 50px;
+    }
+
+    .contact-info {
+      background-color: var(--background-color);
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .contact-info h2 {
+      color: var(--primary-blue);
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      font-size: 16px;
+      color: var(--text-color);
+      justify-content: flex-start;
+    }
+
+    .contact-icon {
+     font-family: 'Material Symbols Outlined';
+     font-size: 24px;
+      margin-right: 15px;
+     color: var(--Deep-Pink);
+     width: 30px; /* Added fixed width */
+      text-align: center; /* Optional: centers the icon within the space */
+    }
+
+    .divider {
+      height: 2px;
+      background-color: var(--accent-maroon);
+      margin: 35px auto 25px;
+      width: 60%;
+      border-radius: 2px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 14px;
+      color: var(--text-color);
+      background-color: var(--background-color);
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 36px;
+      }
+
+      p {
+        font-size: 18px;
+      }
+
+      .contact-info {
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="C:\Users\gabri\Downloads\CSS\Montmed-Full 300dpi RGB.jpg" alt="Montmed Logo" />
+    </div>
+  </header>
+
+  <main>
+    <div class="coming-soon-container">
+      <h1>Coming Soon</h1>
+      <p>We’re crafting something exceptional. Stay connected with us in the meantime.</p>
+
+      <div class="contact-info">
+        <h2>Contact Us</h2>
+
+        <div class="contact-item">
+          <span class="contact-icon">mail</span>
+          <span>info@montmed.ca</span>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">call</span>
+          <span>(514) 695-1222</span>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">location_on</span>
+          <span>1275 Av. des Canadiens-de-Montréal #500, Montréal, QC H3B 0G4</span>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="social-links">
+          <!-- Optional future icons -->
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Montmed. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
